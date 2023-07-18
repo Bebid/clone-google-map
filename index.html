@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Google Map</title>
+        <link href="index.css" rel="stylesheet" />
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <body>
+            <section id="section-sidebar" class="flex flex-column">
+                <div id="search" class="flex">
+                    <input
+                        class="rounded flex-grow"
+                        aria-label="search-input"
+                    />
+                    <button class="btn rounded">SEARCH</button>
+                </div>
+                <div id="filter-action" class="flex">
+                    <div id="select" class="flex flex-center flex-grow rounded">
+                        <p class="flex-grow">United States of America</p>
+                        <img src="./images/chevron_down.png" />
+                    </div>
+                    <button id="btn-filter" class="btn rounded">Filter</button>
+                </div>
+                <nav id="nav" class="mobile-view">
+                    <button id="viewList" class="flex-grow active">
+                        List View
+                    </button>
+                    <button id="viewMap" class="flex-grow">Map View</button>
+                </nav>
+                <div id="locations" class="flex-grow">
+                    <div class="header text-center bg-dark">
+                        There are 10 locations near you
+                    </div>
+                    <ul>
+                        <li>
+                            <div id="location" class="flex flex-center">
+                                <div class="flex flex-column flex-center px-1">
+                                    <span>1</span>
+                                    <img src="./images/map_pin_regular.png" />
+                                    <p class="text-center">
+                                        Open until <strong>10pm</strong>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4>The Shop</h4>
+                                    <p>343 SEPULVEDA BLVD TORRANCE CA 90505</p>
+                                    <div class="flex gap-1">
+                                        <img src="./images/phone_icon.png" />
+                                        <p>(214) 826-0331</p>
+                                    </div>
+                                    <button class="btn bg-dark rounded">
+                                        GET DIRECTIONS
+                                    </button>
+                                </div>
+                                <img
+                                    class="px-1"
+                                    src="./images/chevron_right.png"
+                                />
+                            </div>
+                        </li>
+                        <li>
+                            <div id="location" class="flex flex-center">
+                                <div class="flex flex-column flex-center px-1">
+                                    <span>2</span>
+                                    <img src="./images/map_pin_regular.png" />
+                                    <p class="text-center">
+                                        Open until <strong>10pm</strong>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4>The Shop</h4>
+                                    <p>343 SEPULVEDA BLVD TORRANCE CA 90505</p>
+                                    <div class="flex gap-1">
+                                        <img src="./images/phone_icon.png" />
+                                        <p>(214) 826-0331</p>
+                                    </div>
+                                    <button class="btn bg-dark rounded">
+                                        GET DIRECTIONS
+                                    </button>
+                                </div>
+                                <img
+                                    class="px-1"
+                                    src="./images/chevron_right.png"
+                                />
+                            </div>
+                        </li>
+                        <li>
+                            <div id="location" class="flex flex-center">
+                                <div class="flex flex-column flex-center px-1">
+                                    <span>3</span>
+                                    <img src="./images/map_pin_regular.png" />
+                                    <p class="text-center">
+                                        Open until <strong>10pm</strong>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4>The Shop</h4>
+                                    <p>343 SEPULVEDA BLVD TORRANCE CA 90505</p>
+                                    <div class="flex gap-1">
+                                        <img src="./images/phone_icon.png" />
+                                        <p>(214) 826-0331</p>
+                                    </div>
+                                    <button class="btn bg-dark rounded">
+                                        GET DIRECTIONS
+                                    </button>
+                                </div>
+                                <img
+                                    class="px-1"
+                                    src="./images/chevron_right.png"
+                                />
+                            </div>
+                        </li>
+                        <li>
+                            <div id="location" class="flex flex-center">
+                                <div class="flex flex-column flex-center px-1">
+                                    <span>4</span>
+                                    <img src="./images/map_pin_regular.png" />
+                                    <p class="text-center">
+                                        Open until <strong>10pm</strong>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4>The Shop</h4>
+                                    <p>343 SEPULVEDA BLVD TORRANCE CA 90505</p>
+                                    <div>
+                                        <img src="./images/phone_icon.png" />
+                                        <p>(214) 826-0331</p>
+                                    </div>
+                                    <button class="btn bg-dark rounded">
+                                        GET DIRECTIONS
+                                    </button>
+                                </div>
+                                <img
+                                    class="px-1"
+                                    src="./images/chevron_right.png"
+                                />
+                            </div>
+                        </li>
+                        <li>
+                            <div id="location" class="flex flex-center">
+                                <div class="flex flex-column flex-center px-1">
+                                    <span>5</span>
+                                    <img src="./images/map_pin_regular.png" />
+                                    <p class="text-center">
+                                        Open until <strong>10pm</strong>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4>The Shop</h4>
+                                    <p>343 SEPULVEDA BLVD TORRANCE CA 90505</p>
+                                    <div class="flex gap-1">
+                                        <img src="./images/phone_icon.png" />
+                                        <p>(214) 826-0331</p>
+                                    </div>
+                                    <button class="btn bg-dark rounded">
+                                        GET DIRECTIONS
+                                    </button>
+                                </div>
+                                <img
+                                    class="px-1"
+                                    src="./images/chevron_right.png"
+                                />
+                            </div>
+                        </li>
+                        <li>
+                            <div id="location" class="flex flex-center">
+                                <div class="flex flex-column flex-center px-1">
+                                    <span>6</span>
+                                    <img src="./images/map_pin_regular.png" />
+                                    <p class="text-center">
+                                        Open until <strong>10pm</strong>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4>The Shop</h4>
+                                    <p>343 SEPULVEDA BLVD TORRANCE CA 90505</p>
+                                    <div class="flex gap-1">
+                                        <img src="./images/phone_icon.png" />
+                                        <p>(214) 826-0331</p>
+                                    </div>
+                                    <button class="btn bg-dark rounded">
+                                        GET DIRECTIONS
+                                    </button>
+                                </div>
+                                <img
+                                    class="px-1"
+                                    src="./images/chevron_right.png"
+                                />
+                            </div>
+                        </li>
+                        <li>
+                            <div id="location" class="flex flex-center">
+                                <div class="flex flex-column flex-center px-1">
+                                    <span>7</span>
+                                    <img src="./images/map_pin_regular.png" />
+                                    <p class="text-center">
+                                        Open until <strong>10pm</strong>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4>The Shop</h4>
+                                    <p>343 SEPULVEDA BLVD TORRANCE CA 90505</p>
+                                    <div class="flex gap-1">
+                                        <img src="./images/phone_icon.png" />
+                                        <p>(214) 826-0331</p>
+                                    </div>
+                                    <button class="btn bg-dark rounded">
+                                        GET DIRECTIONS
+                                    </button>
+                                </div>
+                                <img
+                                    class="px-1"
+                                    src="./images/chevron_right.png"
+                                />
+                            </div>
+                        </li>
+                        <li>
+                            <div id="location" class="flex flex-center">
+                                <div class="flex flex-column flex-center px-1">
+                                    <span>8</span>
+                                    <img src="./images/map_pin_regular.png" />
+                                    <p class="text-center">
+                                        Open until <strong>10pm</strong>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4>The Shop</h4>
+                                    <p>343 SEPULVEDA BLVD TORRANCE CA 90505</p>
+                                    <div class="flex gap-1">
+                                        <img src="./images/phone_icon.png" />
+                                        <p>(214) 826-0331</p>
+                                    </div>
+                                    <button class="btn bg-dark rounded">
+                                        GET DIRECTIONS
+                                    </button>
+                                </div>
+                                <img
+                                    class="px-1"
+                                    src="./images/chevron_right.png"
+                                />
+                            </div>
+                        </li>
+                        <li>
+                            <div id="location" class="flex flex-center">
+                                <div class="flex flex-column flex-center px-1">
+                                    <span>9</span>
+                                    <img src="./images/map_pin_regular.png" />
+                                    <p class="text-center">
+                                        Open until <strong>10pm</strong>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4>The Shop</h4>
+                                    <p>343 SEPULVEDA BLVD TORRANCE CA 90505</p>
+                                    <div class="flex gap-1">
+                                        <img src="./images/phone_icon.png" />
+                                        <p>(214) 826-0331</p>
+                                    </div>
+                                    <button class="btn bg-dark rounded">
+                                        GET DIRECTIONS
+                                    </button>
+                                </div>
+                                <img
+                                    class="px-1"
+                                    src="./images/chevron_right.png"
+                                />
+                            </div>
+                        </li>
+                        <li>
+                            <div id="location" class="flex flex-center">
+                                <div class="flex flex-column flex-center px-1">
+                                    <span>10</span>
+                                    <img src="./images/map_pin_regular.png" />
+                                    <p class="text-center">
+                                        Open until <strong>10pm</strong>
+                                    </p>
+                                </div>
+                                <div>
+                                    <h4>The Shop</h4>
+                                    <p>343 SEPULVEDA BLVD TORRANCE CA 90505</p>
+                                    <div class="flex gap-1">
+                                        <img src="./images/phone_icon.png" />
+                                        <p>(214) 826-0331</p>
+                                    </div>
+                                    <button class="btn bg-dark rounded">
+                                        GET DIRECTIONS
+                                    </button>
+                                </div>
+                                <img
+                                    class="px-1"
+                                    src="./images/chevron_right.png"
+                                />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="filter-list" style="display: none">
+                    <div class="header bg-dark">Filters</div>
+                    <div class="filter-content">
+                        <ul>
+                            <li>Retail</li>
+                            <li>Outlet</li>
+                            <li>Factory</li>
+                            <li>Promotion</li>
+                        </ul>
+                        <button
+                            id="btn-close-filter"
+                            class="btn bg-dark rounded"
+                        >
+                            Close Filters
+                        </button>
+                    </div>
+                </div>
+                <div id="mobile-map" class="bg-map mobile-view flex-grow"></div>
+            </section>
+            <section id="section-map" class="bg-map"></section>
+        </body>
+    </body>
+</html>

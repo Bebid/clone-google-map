@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Arial";
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+@media (max-width: 480px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    #section-map {
+        display: none;
+    }
+
+    .mobile-view {
+        display: flex !important;
+    }
+}
+
+.mobile-view {
+    display: none;
+}
+
+#section-sidebar {
+    height: 100vh;
+    gap: 8px;
+    padding-top: 12px;
+}
+
+#section-sidebar #search,
+#filter-action {
+    padding: 0 12px;
+    gap: 8px;
+}
+
+#search input,
+#filter-action select {
+    padding: 12px 24px;
+    border: 1px solid navy;
+}
+
+.btn {
+    padding: 12px 24px;
+    border: 1px solid navy;
+    background-color: white;
+    color: navy;
+}
+
+.rounded {
+    border-radius: 2px;
+}
+
+.bg-map {
+    background: url("./images/map.png");
+}
+
+#locations {
+    overflow: auto;
+}
+
+#location div:nth-child(2) {
+    border-left: 1px solid navy;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.header {
+    padding: 12px 24px;
+}
+
+.bg-dark {
+    background-color: navy;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.filter-content {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 24px;
+}
+
+#filter-list li {
+    padding: 12px 0;
+}
+
+#filter-list button {
+    align-self: end;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+#nav button {
+    border: none;
+    border-radius: 0;
+    padding: 12px 24px;
+}
+
+#nav button.active {
+    background-color: navy;
+    color: white;
+}
+
+#select {
+    gap: 6px;
+    border: 1px solid navy;
+    padding: 12px;
+}
+
+.px-1 {
+    padding: 0 6px;
+}
+
+#location span {
+    position: relative;
+    top: 31px;
+    color: white;
+}
+
+.gap-1 {
+    gap: 6px;
+}
